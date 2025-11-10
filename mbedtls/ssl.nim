@@ -11,7 +11,7 @@ import "dhm"
 import "utils"
 
 {.compile: "./mbedtls/csources/library/debug.c".}
-{.compile: "./mbedtls/csources/library/ssl_debug_helpers_generated.c".}
+{.compile: "./mbedtls/generated/ssl_debug_helpers_generated.c".}
 {.compile: "./mbedtls/csources/library/ssl_msg.c".}
 {.compile: "./mbedtls/csources/library/ssl_tls12_server.c".}
 {.compile: "./mbedtls/csources/library/ssl_tls.c".}

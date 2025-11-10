@@ -8,7 +8,6 @@ import "md5"
 import "utils"
 
 {.compile: "./mbedtls/csources/library/md.c".}
-{.compile: "./mbedtls/csources/library/hash_info.c".}
 
 {.push hint[ConvFromXtoItselfNotNeeded]: off.}
 

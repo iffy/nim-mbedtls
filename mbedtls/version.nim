@@ -1,7 +1,7 @@
 {.used.}
 import "csources"
 {.compile: "./mbedtls/csources/library/version.c".}
-{.compile: "./mbedtls/csources/library/version_features.c".}
+{.compile: "./mbedtls/generated/version_features.c".}
 
 {.push hint[ConvFromXtoItselfNotNeeded]: off.}
 
