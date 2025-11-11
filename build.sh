@@ -11,7 +11,7 @@ source .venv/bin/activate
 
 python3 install_prerequisites.py
 
-DEST_DIR="./mbedtls/generated"
+DEST_DIR="./generated/library"
 
 mkdir -p $DEST_DIR
 
