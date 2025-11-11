@@ -13,7 +13,7 @@ import "../utils"
 {.compile: "./mbedtls/csources/library/psa_crypto_slot_management.c".}
 {.compile: "./mbedtls/csources/library/psa_crypto_storage.c".}
 {.compile: "./mbedtls/csources/library/psa_its_file.c".}
-{.compile: "./mbedtls/csources/library/psa_crypto_driver_wrappers.c".}
+{.compile: "./mbedtls/csources/library/psa_crypto_driver_wrappers_no_static.c".}
 {.compile: "./mbedtls/csources/library/psa_crypto_pake.c".}
 {.compile: "./mbedtls/csources/library/psa_crypto_rsa.c".}
 {.compile: "./mbedtls/csources/library/psa_crypto_mac.c".}

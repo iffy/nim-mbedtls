@@ -22,6 +22,22 @@ import mbedtls
 import mbedtls/ssl
 ```
 
+If you would like to selectively enable/disable the parts of Mbed-TLS that you don't need, you can create an `mbedtls_config.h` file and point to it like this in a `config.nims` file:
+
+```
+# config.nims
+switch("-passC", "-DMBEDTLS_CONFIG_FILE=\\\"my_mbedtls_config.h\\\"")
+```
+
+```
+# my_mbedtls_config.h
+#define MBEDTLS_PLATFORM_C
+#define MBEDTLS_BIGNUM_C
+#define MBEDTLS_OID_C
+#define MBEDTLS_ASN1_PARSE_C
+...
+```
+
 ## Installation
 
 You can install the development version of the library through nimble with the following command:
